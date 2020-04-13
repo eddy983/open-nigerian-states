@@ -1,0 +1,37 @@
+.footer {
+  background: #050500;
+  padding: 2% $gen-padding;
+  display: flex;
+  justify-content: space-between;
+  color: $color-white;
+
+  @include respond(big-desktop-min) {
+    padding: 2% $gen-padding-large;
+  }
+
+  @include respond(tab-land) {
+    padding: 3% $gen-padding-medium;
+  }
+
+  @include respond(l-phone2) {
+    padding: 5% 0%;
+  }
+
+  &__sponsor {
+    display: flex;
+    align-items: center;
+
+    @include respond(l-phone) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    height: 3rem;
+    margin-left: 2rem;
+  }
+
+  &__report {
+    margin-top: 5%;
+  }
+}

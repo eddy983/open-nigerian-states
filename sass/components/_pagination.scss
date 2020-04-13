@@ -1,0 +1,55 @@
+.pagination {
+  display: inline-block;
+  padding: 4% 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &--2 {
+    padding: 8rem 0;
+  }
+
+  &__item {
+    border: none;
+    float: left;
+    outline: 0;
+    padding: 1rem 1.6rem;
+    text-decoration: none;
+    background: $color-white;
+    color: $color-black;
+    padding: 0.8rem 1.4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    @include respond(l-phone) {
+      font-size: 2rem;
+    }
+
+    @include respond(m-phone3) {
+      font-size: 1.6rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: 2.3%;
+
+      @include respond(l-phone2) {
+        margin-right: 4%;
+      }
+    }
+
+    &:active,
+    &:hover,
+    &::selection {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+  }
+}
+
+.actives {
+  background-color: $color-blue;
+  color: $color-white;
+  &:focus {
+    outline: 0;
+  }
+}
